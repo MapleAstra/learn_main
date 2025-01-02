@@ -17,10 +17,6 @@ convert_duration_seconds_to_minutes_seconds <- function(duration_ms) {
   sprintf("%d'%02d", minutes, seconds)
 }
 
-# Sys.setenv(SPOTIFY_CLIENT_ID = "5b7104f6a68c4e9fbde09d7688282426")
-# Sys.setenv(SPOTIFY_CLIENT_SECRET = "3adbc409f3674d63bb2216d08bba5eac")
-# Sys.setenv(SPOTIFY_REDIRECT_URI = "http://localhost:1410/")
-
 access_token <- get_spotify_access_token()
 
 ksj_albums <- get_artist_albums(id = "1lFLniFTaPjYCtQZvDXpqu")
